@@ -80,7 +80,7 @@ button {
   and (max-device-width: 480px)
   and (-webkit-min-device-pixel-ratio: 2) {
       button {
-          width: 4.7rem;
+          width: 75px;
       }
 
       label {
