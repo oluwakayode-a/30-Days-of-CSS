@@ -80,11 +80,11 @@ button {
   and (max-device-width: 480px)
   and (-webkit-min-device-pixel-ratio: 2) {
       button {
-          width: 5.4rem;
+          width: 4rem;
       }
 
       label {
-          font-size: 15px;
+          font-size: 12px;
       }
 
       .card {
