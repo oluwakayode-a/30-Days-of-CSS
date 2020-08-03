@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    font: 62.5% 'Mulish', sans-serif;
+    background-color: #e2dff2;
+}
+
+.container {
+    background-color: #ffffff;
+    border-radius: 5px;
+    width: 500px;
+    max-width: 100%;
+    display: flex;
+    box-shadow: 4px 4px 6px #b0d8fe;
+}
+
+.p-4 {
+    margin: 0 10px;
+    font-size: 1.5em;
+}
+
+#logo {
+    font-size: 30px;
+    color: #ffffff;
+}
+
+.left-side {
+    background-color: #1E1E64;
+    padding: 2rem;
+    flex: 1;
+}
+
+
+.lead-text {
+    font-size: 0.9rem;
+    margin-top: 50px;
+    color: #ffffff;
+}
+
+p {
+    color: #ffff;
+}
+
+.small-text {
+    padding-top: 30px;
+    font-size: 0.7rem;
+}
+
+.right-side {
+    padding: 2rem;
+    background-color: #f6f5fc;
+    position: relative;
+}
+
+.heading {
+    color: #1E1E64;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+.cards {
+    display: flex;
+    flex-direction: column;
+}
+
+.card {
+    background-color: #ffffff;
+    border-radius: 5px;
+    width: 200px;
+    padding: 20px;
+    margin: 5px;
+    box-shadow: 4px 4px 6px #b0d8fe;
+}
+
+.desc {
+    color: #1E1E64;
+    margin: 10px;
+    font-size: 0.6rem;
+}
+
+.footer {
+    color: #1E1E64;
+    position: absolute;
+    bottom: 0;
+    right: 10px;
+}
