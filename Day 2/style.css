@@ -1,85 +1,101 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    margin: 0;
-    font-family: 'Open Sans', sans-serif;
-    background-color: #F3F3FB;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  font: 62.5% 'Open Sans', sans-serif;
+  background-color: #f3f3fb;
 }
 
 .text-center {
-    text-align: center;
-    line-height: 1em;
-    font-size: 14px;
-    margin-bottom: 10px;
+  text-align: center;
+  line-height: 1em;
+  font-size: 14px;
+  margin-bottom: 10px;
 }
 
 h2 {
-    font-weight: bold;
-    margin: 30px;
+  font-weight: bold;
+  margin: 30px;
+}
+
+.lead{
+    line-height: 1.5em;
 }
 
 ::-webkit-input-placeholder {
-    padding: 25px;
-    font-size: 14px;
+  padding: 25px;
+  font-size: 14px;
 }
 
 ::-moz-placeholder {
-    padding: 25px;
-    font-size: 14px;
+  padding: 25px;
+  font-size: 14px;
 }
 
 :-ms-input-placeholder {
-    padding: 25px;
-    font-size: 14px;
+  padding: 25px;
+  font-size: 14px;
 }
 
 .card {
-    display: flex;
-    flex-direction: column;
-    box-shadow: 1px 6px 4px rgba(11, 20, 46, 0.24);
-    padding: 40px;
-    background-color: #ffffff;
-    border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 4px 12px 13px 2px #208bf52e;
+  padding: 2rem;
+  background-color: #ffffff;
+  border-radius: 5px;
 }
 
 #email_store {
-    margin-top: 30px;
-    text-align: left;
+  margin-top: 30px;
+  text-align: left;
 }
 
-input[type="checkbox"] {
-    transform: scale(1.5);
-    margin-right: 15px;
+input[type='checkbox'] {
+  transform: scale(1.5);
+  margin-right: 15px;
 }
 
 #email_input {
-    width: 25rem;
-    height: 50px;
-    border: 3px solid #F3F3FB;
-    border-radius: 5px;
+  min-width: 300px;
+  height: 50px;
+  border: 3px solid #f3f3fb;
+  border-radius: 5px;
 }
 
 button {
-    height: 50px;
-    border: none;
-    width: 10rem;
-    margin: 10px;
-    background-color: #3983CE;
-    color: #ffffff;
-    text-transform: uppercase;
-    border-radius: 5px;
-    box-shadow: 0px 4px 4px rgba(48, 106, 153, 0.25);
+  height: 50px;
+  border: none;
+  width: 10rem;
+  margin: 10px;
+  background-color: #3d9efe;
+  color: #ffffff;
+  text-transform: uppercase;
+  border-radius: 5px;
+  box-shadow: 4px 4px 6px #b0d8fe;
 }
 
 label {
-    font-size: 14px;
-    line-height: 2em;
+  font-size: 14px;
+  line-height: 2em;
+}
+
+.arrow {
+  font-size: 20px;
+  margin-left: 6px;
+}
+
+.label {
+  max-width: 25rem;
+}
+
+@media only screen and (min-width: 600px) {
 }
