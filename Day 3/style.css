@@ -112,4 +112,8 @@ p {
     .container {
         width: 380px;
     }
+
+    .right-side {
+        padding: 10%;
+        min-width: 100%;
 }
