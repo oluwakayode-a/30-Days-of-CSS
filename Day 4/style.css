@@ -65,10 +65,6 @@ progress {
     padding: 13px;
 }
 
-progress::-webkit-progress-bar {
-    border: none;
-}
-
 
 .file-upload {
     font-size: 0.775rem;
