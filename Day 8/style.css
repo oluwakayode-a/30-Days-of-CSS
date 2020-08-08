@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    place-content: center;
+    height: 100vh;
+    margin: 0;
+    font: 62.5% 'Mulish', sans-serif;
+    background-color: #fff2f6;
+}
+.container {
+    position: relative;
+}
+
+.select {
+    position: absolute;
+    right: 0;
+    top: -46px;
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #f0e9eb;
+    border-radius: 5px;
+    color: white;
+    background-color: #ff6969;
+}
+
+.card {
+    background-color: white;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0px 0px 14px rgb(212 199 199 / 50%);
+}
+
+
+.form {
+    position: relative;
+}
+
+.lead {
+    font-size: 12px;
+}
+
+input[type='text'] {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #f0e9eb;
+    border-radius: 5px;
+    margin-top: 1rem;
+    margin-bottom: 20px;
+}
+
+button {
+    position:absolute;
+    right: 7px;
+    top: 24px;
+    height: 23px;
+    border: none;
+    color: white;
+    background-color: #ff6969;
+}
+
+p {
+    color: #ff6969;
+    margin-top: 10px;
+    font-size: 0.775rem;
+}
