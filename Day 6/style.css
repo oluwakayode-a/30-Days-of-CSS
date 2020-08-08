@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    place-content: center;
+    height: 100vh;
+    margin: 0;
+    font: 62.5% 'Mulish', sans-serif;
+    background-color: #F3FBFB;
+}
+
+.card {
+    background-color: #3D66DE;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+    border-radius: 10px;
+    box-shadow: 0px 0px 14px rgb(212 199 199 / 50%);
+}
+
+.title {
+    text-align: center;
+    color: white;
+}
+
+.meeting-info {
+    background-color: #4d74ee;
+    display: flex;
+    border-radius: 5px;
+    color: white;
+    padding: 0.775rem 2.5rem;
+    margin-top: 10px;
+}
+
+.label {
+    font-weight: bold;
+}
+
+hr {
+    opacity: 40%;
+}
+
+.more {
+    color: white;
+    text-align: center;
+    margin: 15px;
+    text-decoration: underline;
+}
+
+.controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+button {
+    width: 100%;
+    height: 50px;
+    margin: auto 2px;
+    border: none;
+    font-weight: bold;
+}
+
+.join-now {
+    background-color: white;
+    color: #423e49;
+    border-radius: 10px;
+}
+
+.cancel {
+    background-color: #4d74ee;
+    color: white;
+    border-radius: 15px;
+}
