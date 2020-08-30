@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0f0f1b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0;
+    height: 100vh;
+    font: 62.5% 'Rubik', sans-serif;
+    color: white;
+}
+
+.header {
+    text-align: center;
+}
+
+.header p {
+    font-size: 1.5em;
+}
+
+.heading {
+    font-size: 2em;
+}
+
+.card-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.card-item {
+    margin: 20px;
+    background-color: #171727;
+    height: 150px;
+    width: 200px;
+    border-radius: 10px;
+    padding: 30px;
+}
+
+.card-item .card-header {
+    font-size: 1.5em;
+}
+
+.card-item .card-price {
+    font-size: 1.6em;
+    margin: 10px 0;
+}
+
+.card-item .card-action {
+    margin: 25px 0;
+}
+
+.view-more {
+    border: 1px solid #49564f;
+    background-color: #0f0f1b;
+    width: 120px;
+    height: 60px;
+    margin: 6px;
+    color: #6161A7;
+    border-radius: 10px;
+    padding: 15px;
+    cursor: pointer;
+}
+
+.info {
+    margin-top: -5px;
+    color: #c3c3c3;
+}
+
+.active {
+    background-color: #242486;
+}
+
+@media screen and (min-width: 768px) {
+    .card-container {
+        flex-direction: row;
+    }
+    
+    .card-item {
+        margin: 30px 5px;
+        height: 200px;
+    }
+
+    .card-item .card-price {
+        margin: 20px 0;
+        font-size: 2em;
+    }
+
+    .card-item .card-action {
+        font-size: 1.2em;
+        margin: 45px 0;
+    }
+
+    .info {
+        margin-top: -15px;
+        color: #c3c3c3;
+    }
+}
