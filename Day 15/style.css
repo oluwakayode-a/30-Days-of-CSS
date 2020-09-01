@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    font: 62.5% 'Mulish', sans-serif;
+    background-color: #3C63E3;
+}
+
+.card {
+    background-color: white;
+    width: 370px;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0px 0px 14px rgb(212 199 199 / 50%);
+}
+
+input[type='text'] {
+    width: 100%;
+    padding: 15px;
+    border: 2px solid #f0e9eb;
+    border-radius: 5px;
+    margin: 10px 0 10px 0;
+}
+
+label {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 0 0 10px 0;
+}
+
+.col-2 {
+    display: flex;
+}
+
+select {
+    width: 100%;
+    margin: 1rem 0;
+    padding: 15px;
+    border: 2px solid #f0e9eb;
+    border-radius: 5px;
+}
+
+.select-label {
+    width: 100%;
+    margin: auto;
+    font-size: 1rem;
+}
+
+textarea {
+    width: 100%;
+    border: 2px solid #f0e9eb;
+    border-radius: 5px;
+    padding: 15px;
+    font-family: 'Mulish', sans-serif;
+    margin: 10px 0 10px 0;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+button {
+    width: 100%;
+    height: 45px;
+    border: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.submit {
+    background-color: #3C63E3;
+    color: white;
+    box-shadow: -1px 4px 7px 0px rgb(74 74 214);
+}
+
+
+.title {
+    text-align: center;
+}
