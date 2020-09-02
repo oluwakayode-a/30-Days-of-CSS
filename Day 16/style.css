@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    font: 62.5% 'Mulish', sans-serif;
+    background-color: #F3FBFB;
+}
+
+
+.card {
+    background-color: white;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0px 0px 14px rgb(212 199 199 / 50%);
+    position: relative;
+}
+
+.close {
+    position: absolute;
+    right: 30px;
+    top: 15px;
+    font-size: 1.5rem;
+}
+
+.form {
+    position: relative;
+}
+
+.title {
+    font-weight: bold;
+    text-align: left;
+    font-size: 2.7em;
+    margin: 30px 0;
+    width: 90%;
+}
+
+input[type='search'] {
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+    padding-left: 40px;
+    border: 2px solid #f0e9eb;
+    border-radius: 20px;
+    margin-top: 1rem;
+    margin-bottom: 20px;
+}
+
+button {
+    position:absolute;
+    left: 10px;
+    top: 28px;
+    height: 23px;
+    border: none;
+    background: none;
+    font-size: 1rem;
+}
+
+.suggested {
+    display: flex;
+}
+
+.contact-card {
+    border: 2px solid #f0e9eb;
+    width: 100%;
+    height: 83px;
+    margin: 10px auto 10px auto;
+    border-radius: 10px;
+}
+
+.rounded {
+    height: 50px;
+    width: 50px;
+    background-color: #f0e9eb;
+    border-radius: 50%;
+    margin: 20px 0 0 10px;
+    overflow: hidden;
+}
+
+img {
+    margin-left: -27px;
+    width: 100px;
+    height: auto;
+}
+.contact-details {
+    display: flex;
+    flex-direction: column;
+    margin: -35px 0rem 0px 4rem;
+    justify-content: center;
+}
+
+.name {
+    font-weight: bold;
+    font-size: 1.3em;
+    margin-top: -10px;
+}
+
+.handle {
+    margin-top: 10px;
+}
