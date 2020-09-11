@@ -14,3 +14,5 @@
 - Day 13 Completed
 - Day 14 Completed
 - Day 15 Completed
+- Day 16 Completed
+- Day 17 Completed
