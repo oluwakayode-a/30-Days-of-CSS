@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minato</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Minato Namikaze</a>
+        <nav>
+            <ul>
+                <li><a href="#">home</a></li>
+                <li><a href="#">about</a></li>
+                <li><a href="#">faq</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="wrapper">
+        <section class="hero">
+            <div class="inner">
+                <div class="clipper">
+                    <h1>Go Musician</h1>
+                </div>
+
+                <div class="anim-panel">
+                    <p>
+                        Experience true transformation with the hiphop rasengan
+                    </p>
+                    <a href="#" class="read-btn primary">
+                        Get Spinning
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="sidebar">
+            <div class="inner">
+                <div class="clipper">
+                    <h2>Featured</h2>
+                </div>
+
+                <div class="anim-panel">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi accusantium molestiae ad tenetur dignissimos magnam culpa laboriosam placeat blanditiis. Quis!
+                    </p>
+                    <a href="#" class="read-btn">
+                        Read More
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="subscribe">
+            <div class="inner">
+                <div class="clipper">
+                    <h2>Subscribe</h2>
+                </div>
+
+                <div class="anim-panel">
+                    <p>Get the latest updates about this website and stuff</p>
+                </div>
+                <input type="text" name="email" placeholder="Email Address">
+                <button class="cta">Subscribe Now</button>
+            </div>
+        </section>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js" integrity="sha512-6MCPs9fbSIt6mTpJH2Lbo9Kk71gcgwY85BCqJGP04x+O08W3m/OiKfMiMc4VQKYn+DCtAQwpGumWeD0cACeRsQ==" crossorigin="anonymous"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', e => {
+            window.addEventListener('load', () => {
+
+                document.body.style.display = 'block';
+                let tl = new TimelineMax();
+
+                tl.staggerFrom('section', 2, {
+                    opacity: 0,
+                    scale: .5,
+                    ease: Power2.easeout
+                }, 0.2)
+
+                tl.staggerFrom('h1, h2', .5, {
+                    opacity: 0,
+                    y: -40,
+                    ease: Power2.easeInOut
+                }, 0.2, "-=2")
+
+                tl.staggerFrom('.anim-panel', 1, {
+                    opacity: 0,
+                    y: -40,
+                    ease: Power2.easeInOut
+                }, 0.2, "-=1.5")
+
+                    }, false)
+                })
+        
+    </script>
+</body>
+</html>
