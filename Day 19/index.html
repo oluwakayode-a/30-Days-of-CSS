@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <aside>
+        <figure>
+            <div id="avatar"></div>
+            <figcaption>Johnny Doe</figcaption>
+        </figure>
+        <img src="images/menu.svg" alt="">
+
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About me</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <main>
+        <h1>I'm a designer of things</h1>
+        <p>You design this thing and then make it a reality in the browser, oh yeah.. Imagine the possibilities of your new skill.</p>
+        <a href="#" class="cta">my portfolio</a>
+    </main>
+
+    <script>
+        (function () {
+            let menu = document.querySelector('ul'),
+                menulink = document.querySelector('img');
+            menulink.addEventListener('click', e => {
+                menu.classList.toggle('active');
+                e.preventDefault();
+            })
+        })();
+    </script>
+</body>
+</html>
