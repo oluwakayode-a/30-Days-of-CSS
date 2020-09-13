@@ -1,0 +1,185 @@
+$btn-color: #3C9CCC;
+$desktop: 840px;
+
+@mixin desktop {
+    @media (min-width: #{$desktop}) {
+        @content;
+    }
+}
+
+@mixin large-screens {
+    @media (min-width: 1108px) {
+        @content;
+    }
+}
+
+body, html {
+    height: 100%;
+}
+
+body {
+    font-family: "Montserrat";
+    margin: 0;
+}
+
+header {
+    img {
+        cursor: pointer;
+        position: absolute;
+        right: 0;
+        margin: 15px;
+
+        @include desktop {
+            display: none;
+        }
+    }
+
+    nav {
+        display: none;
+        @include desktop {
+            display: block;
+
+        }
+        ul {
+            list-style-type: none;
+            padding: 2em;
+
+            @include desktop {
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-end;
+                padding: .6em;
+            }
+
+            li {
+                font-size: 2em;
+                margin: 1em;
+                
+                @include desktop {
+                    font-size: .75em;
+                }
+    
+                a {
+                    color: white;
+                    @include desktop {
+                        color: black;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+main {
+    section.intro {
+        padding: 5em 1.4em 0 1.4em;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        min-height: 50vh;
+        background: white url('../assets/bg.svg') no-repeat bottom right;
+        background-size: 50%;
+        overflow: hidden;
+
+        @include desktop {
+            background-size: max(55%);
+        }
+
+        @include large-screens {
+            background-size: 40%;
+            padding-left: 6.4em;
+        }
+
+        h1 {
+            font-size: 2em;
+            padding: 0;
+            margin-bottom: 0;
+        }
+
+        p {
+            margin: 15px 0;
+            padding: 0;
+            font-size: 1.2em;
+            align-self: flex-start;
+            max-width: 70%;
+        }
+
+        .browse-btn {
+            align-self: flex-start;
+        }
+    }
+
+    section.join {
+        background-color: #0f0f2b;
+        padding: 2em;
+        color: white;
+        min-height: 40vh;
+        
+        text-align: center;
+
+        h1 {
+            @include desktop {
+                margin-top: 2rem;
+            }
+        }
+
+        p {
+            font-size: .8em;
+            color: darken($color: white, $amount: 30%);
+        }
+
+        .form {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            input {
+                padding: 1.2em;
+                font-family: "Montserrat";
+                max-width: 80%;
+                min-width: 30%;
+            }
+
+            button {
+                margin-left: 10px;
+                padding: 1.4em;
+                box-shadow: none;
+            }
+        }
+
+        small {
+            display: block;
+            margin-top: 10px;
+            color: lighten(black, 50%);
+        }
+    }
+}
+
+.active {
+    position: absolute;
+    top: 0;
+    background: #0f0f2b;
+    margin: 0;
+    height: calc(100% + 2em);
+    width: 70%;
+    transition: 1s ease-in-out;
+    display: block;
+}
+
+
+.btn {
+    display: block;
+    text-decoration: none;
+    background-color: $btn-color;
+    padding: 1.2em;
+    border: none;
+    color: white;
+    border-radius: 10px;
+    transition: 100ms ease-in-out;
+    box-shadow: 0px 0px 14px #adaecd;
+}
+
+p {
+    line-height: 1.5em;
+}

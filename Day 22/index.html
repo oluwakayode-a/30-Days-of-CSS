@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <img id="menu" src="assets/menu.svg" alt="">
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Courses</a></li>
+                <li><a href="#">Blog</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="intro">
+            <h1>Web development courses</h1>
+            <p>Learn to code with an easy to understand, project based learning path</p>
+
+            <a href="#" class="browse-btn btn">Browse courses</a>
+        </section>
+
+        <section class="join">
+            <h1>Join the Traversy Media mailing list</h1>
+
+            <p>Sign up to the newsletter and be the first one to know about new courses or special offers</p>
+
+            <div class="form">
+                <input type="text" placeholder="Enter your email">
+                <button class="subscribe btn">Subscribe</button>
+            </div>
+            <small>We won't spam. Pinky promise.</small>
+        </section>
+    </main>
+
+
+    <script>
+        (function() {
+            let el = document.getElementById('menu');
+            let nav = document.querySelector('nav');
+
+            el.addEventListener('click', e => {
+                e.preventDefault();
+                nav.classList.toggle('active');
+            })
+        })();
+    </script>
+</body>
+</html>
