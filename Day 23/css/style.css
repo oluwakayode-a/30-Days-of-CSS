@@ -74,7 +74,7 @@ header .active {
   position: absolute;
   left: 0;
   top: 0;
-  height: 100%;
+  height: calc(100% + 51em);
   padding: 1em;
 }
 
