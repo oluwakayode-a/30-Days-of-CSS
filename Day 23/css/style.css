@@ -129,11 +129,11 @@ section.intro .form input {
   border: 1px solid gray;
   border-radius: 10px;
   color: white;
-  min-width: 60%;
+  min-width: 50%;
 }
 
 section.intro .form .signup {
-  margin-left: 10px;
+  margin-left: 5px;
   min-width: 30%;
 }
 
