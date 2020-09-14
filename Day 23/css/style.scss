@@ -1,0 +1,219 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap");
+
+$primary: #7A6DE3;
+$bg: #323145;
+$bg-dark: #2d2b40;
+$desktop: 840px;
+
+@mixin desktop {
+    @media (min-width: #{$desktop}) {
+        @content;
+    }
+}
+
+// * {
+//     box-sizing: border-box;
+// }
+
+body, html {
+    height: 100%;
+}
+
+body {
+    font-family: "Montserrat";
+    margin: 0;
+    background-color: $bg;
+    color: white;
+}
+
+header {
+    img {
+        position: absolute;
+        top: 16px;
+        right: 16px;
+        cursor: pointer;
+        width: 40px;
+
+        @include desktop {
+            display: none;
+        }
+    }
+
+    nav {
+        ul {
+            display: none;
+            margin: 0;
+            list-style-type: none;
+
+            @include desktop {
+                display: flex;
+                justify-content: flex-end;
+            }
+
+            li {
+                padding: 1em;
+                margin-top: 25px;
+                a {
+                    text-decoration: none;
+                    color: white;
+                    font-size: 1.3em;
+                    display: block;
+                    // padding: .75em;
+
+                    @include desktop {
+                        font-size: 1em;
+                    }
+                }
+            } 
+            
+
+            li a:hover {
+                transition: all 0.5s ease;
+                transform: translate(10%);
+                text-decoration: underline;
+            }
+        }
+    }
+
+    
+    .active {
+        display: block;
+        background: darken($color: $bg, $amount: 5);
+        width: 50%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        padding: 1em;
+    }
+
+}
+
+section.intro {
+    overflow: hidden;
+    display: flex;
+    padding: 5em 1.4em;
+    
+    @include desktop {
+        padding-left: 2.5em;
+        padding-top: 8em;
+    }
+
+
+    img {
+        max-width: 500px;
+        min-width: 30%;
+        padding: 2em;
+    }
+
+    .container {
+        @include desktop {
+            width: 60%;
+        }
+    }
+
+
+    // .container {
+    //     width: 50%;
+    // }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    p {
+        font-size: 1.2em;
+        line-height: 1.4em;
+    }
+
+    .form {
+        display: flex;
+        margin-top: 2rem;
+
+        input {
+            font-family: "Montserrat";
+            padding: 1em;
+            background: none;
+            border: none;
+            border: 1px solid darken($color: white, $amount: 50);
+            border-radius: 10px;
+            color: white;
+            min-width: 60%;
+        }
+
+        .signup {
+            margin-left: 10px;
+            min-width: 30%;
+        }
+
+    }
+}
+
+section.features {
+    display: flex;
+    flex-direction: column;
+    background-color: darken($color: $bg, $amount: 10%);
+    width: 95%;
+    margin: 5% auto;
+    border-radius: 10px;
+    
+    @include desktop {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .item {
+        margin: 20px auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 1.2em;
+
+        h3 {
+            margin: 1.5em;
+            color: darken($color: white, $amount: 10);
+
+            @include desktop {
+                font-size: 1rem;
+            }
+        }
+
+        img {
+            min-width: 15rem;
+            max-width: 20rem;
+            height: 83.11px;
+
+            @include desktop {
+                min-width: 6rem;
+                max-width: 8rem;
+            }
+        }
+
+        p {
+            line-height: 1.4em;
+            color: darken($color: white, $amount: 20);
+
+            @include desktop {
+                font-size: .9em;
+                
+            }
+        }
+    }
+}
+
+
+.btn {
+    background-color: $primary;
+    color: white;
+    border: none;
+    padding: 1em;
+    border-radius: 5px;
+}
+
+p {
+    margin: 0;
+}
+

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <img src="images/menu.svg" alt="">
+        <nav>
+            <ul>
+                <li><a href="#">Browse</a></li>
+                <li><a href="#">Support</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Sign In</a></li>
+                <li><a href="#">Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="intro">
+        <div class="container">
+            <h1>You're never paying full price for software again</h1>
+            <p>We'll send you the hottest deals straight to your inbox so you're always in on the best-kept software secrets</p>
+            
+            <div class="form">
+                <input type="text" placeholder="Email Address">
+                <button class="btn signup">Sign Up</button>
+            </div>
+        </div>
+        <img src="./images/bg.svg" alt="" class="bg">
+        
+    </section>
+
+    <section class="features">
+        <div class="item">
+            <img src="images/fire.svg" alt="img1">
+            <h3>We partner with the hottest tech companies</h3>
+            <p>We're talking Evernote, MailChimp, Depositphotos...just to name a few</p>
+        </div>
+
+        <div class="item">
+            <img src="images/deal.svg" alt="img1">
+            <h3>We run insane deals on their products</h3>
+            <p>But don't sleep on it! Our deals sell out within a couple weeks.</p>
+        </div>
+
+        <div class="item">
+            <img src="images/save.svg" alt="img1">
+            <h3>You save thousands of dollars</h3>
+            <p>And build up a full arsenal of tools to grow your business.</p>
+        </div>
+    </section>
+
+    <script>
+        (function () {
+            let menu = document.querySelector('ul'),
+                menulink = document.querySelector('img');
+            menulink.addEventListener('click', e => {
+                menu.classList.toggle('active');
+                e.preventDefault();
+            })
+        })();
+    </script>
+
+</body>
+</html>
