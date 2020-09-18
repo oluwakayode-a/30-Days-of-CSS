@@ -190,7 +190,7 @@ section.showcase .product-card .product-desc p {
 
 section.showcase .product-card .product-desc button {
   margin-top: 10px;
-  width: 60%;
+  min-width: 60%;
 }
 
 section.showcase .product-card .product-img {
@@ -201,7 +201,8 @@ section.showcase .product-card .product-img {
 }
 
 section.showcase .product-card .product-img img {
-  width: 150px;
+  width: 100px;
+  margin: auto;
 }
 
 @media (min-width: 840px) {
@@ -224,7 +225,7 @@ section.showcase .product-card .product-img .colors img {
 
 @media (min-width: 840px) {
   section.showcase .product-card .product-img .colors img {
-    width: 70px;
+    width: 1rem;
     margin: auto 10px;
   }
 }

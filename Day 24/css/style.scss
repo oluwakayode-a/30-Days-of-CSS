@@ -179,7 +179,7 @@ section.showcase {
 
             button {
                 margin-top: 10px;
-                width: 60%;
+                min-width: 60%;
             }
         }
 
@@ -188,7 +188,8 @@ section.showcase {
             place-items: center;
             width: 50%;
             img {
-                width: 150px;
+                width: 100px;
+                margin: auto;
 
                 @include desktop(){
                     width: 390px;
@@ -204,7 +205,7 @@ section.showcase {
                     margin: auto 10px;
 
                     @include desktop(){
-                        width: 70px;
+                        width: 1rem;
                         margin: auto 10px;
                     }
                 }
