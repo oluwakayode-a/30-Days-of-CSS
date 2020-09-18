@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kicks</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="navbar-brand">Kiks</a>
+        <img src="images/menu.svg" alt="">
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Shoes</a></li>
+                <li><a href="#">Cart</a></li>
+                <li><a class="btn">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="carousel">
+        <img src="images/shoe.svg" alt="" class="feature-img">
+        <div class="intro">
+            <h1>Walk Smarter</h1>
+            <p>
+                Designed with your feet in mind to give you comfortable feel every step.
+            </p>
+            <button class="btn shop-now">Shop Now</button>
+            <button class="learn-more">Learn More</button>
+        </div>
+    </section>
+
+    <section class="showcase">
+        <h1 class="title">Showcase</h1>
+
+        <div class="product-card">
+            <div class="product-desc">
+                <h1>Kit Max Pro</h1>
+                <p class="desc">For the early morning risers in search of the best footwear to keep in shape</p>
+                <span class="price">Price: $499.99</span>
+    
+                <button class="btn">Buy Now</button>
+            </div>
+
+            <div class="product-img">
+                <img src="./images/shoe_2.svg" alt="">
+                <div class="colors">
+                    <img src="./images/blue.svg" alt="">
+                    <img src="./images/red.svg" alt="">
+                    <img src="./images/white.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact">
+        <div class="contact-us">
+            <h1>Contact Us</h1>
+            <p>For support and feedback</p>
+        </div>
+
+        <div class="contact-form">
+            <label for="name">
+                Name
+            </label>
+            <input type="text" id="name">
+
+            <label for="email">Email</label>
+            <input type="email" id="email">
+
+            <label for="message">Message</label>
+            <textarea name="message" id="message" cols="30" rows="10"></textarea>
+
+            <button class="btn">Send Message</button>
+        </div>
+    </section>
+
+    <script>
+        (function () {
+            let menu = document.querySelector('ul'),
+                menulink = document.querySelector('img');
+            menulink.addEventListener('click', e => {
+                menu.classList.toggle('active');
+                e.preventDefault();
+            })
+        })();
+    </script>
+</body>
+</html>

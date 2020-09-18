@@ -1,0 +1,268 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap");
+
+$primary: #eb7e5b;
+$bg: #f5f5f5;
+$bg-dark: #2d2b40;
+$desktop: 840px;
+
+@mixin desktop {
+    @media (min-width: #{$desktop}) {
+        @content;
+    }
+}
+
+.btn {
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#1e5799+0,2989d8+0,ec7d56+0,fd870a+100&0.92+57,1+100 */
+    background: -moz-linear-gradient(45deg,  rgba(236,125,86,0.92) 0%, rgba(246,131,43,0.92) 57%, rgba(253,135,10,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(45deg,  rgba(236,125,86,0.92) 0%,rgba(246,131,43,0.92) 57%,rgba(253,135,10,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(45deg,  rgba(236,125,86,0.92) 0%,rgba(246,131,43,0.92) 57%,rgba(253,135,10,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ebec7d56', endColorstr='#fd870a',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    color: white;
+}
+
+button {
+    border: none;
+    padding: 1rem;
+    font-weight: bold;
+    font-family: "Montserrat";
+    cursor: pointer;
+}
+
+// * {
+//     box-sizing: border-box;
+// }
+
+body, html {
+    background-color: $bg;
+    height: 100%;
+}
+
+body {
+    font-family: 'Montserrat';
+    overflow-x: hidden;
+}
+
+header {
+    @include desktop() {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    margin: 0;
+    .navbar-brand {
+        display: block;
+        text-decoration: none;
+        font-size: 2rem;
+        color: #a43b00;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+    nav {
+
+        ul {
+            list-style-type: none;
+            // display: flex;
+            // flex-direction: column;
+            display: none;
+            margin: 0;
+
+            @include desktop {
+                display: flex;
+                justify-content: flex-end;
+            }
+    
+            li {
+                a {
+                    color: darken($color: $primary, $amount: 35);
+                    text-decoration: none;
+                    display: block;
+                    margin: 3.6rem;
+                    font-size: 2rem;
+                    font-weight: bold;
+
+                    @include desktop() {
+                        margin: 10px 0 0 2rem;
+                        font-size: 1rem; 
+                    }
+                }
+                a.btn {
+                    padding: .775rem;
+                    margin-top: auto;
+                }
+            }
+        }
+    }
+
+    img {
+        position: absolute;
+        right: 10px;
+        top: 2px;
+        margin: 10px auto;
+        cursor: pointer;
+
+        @include desktop(){
+            display: none;
+        }
+    }
+}
+
+section {
+    padding: 10px;
+}
+
+section.carousel {
+    overflow: hidden;
+    img {
+        max-width: 200px;
+        position: absolute;
+        right: -80px;
+        top: 230px;
+
+        @include desktop {
+            max-width: 400px;
+            right: -110px;
+            top: 90px;
+        }
+    }
+    margin: 3rem auto 0 0;
+
+    .intro {
+        h1 {
+            text-transform: uppercase;
+            font-size: 2rem;
+        }
+
+        p {
+            line-height: 1.5em;
+        }
+
+        .shop-now {
+            padding: calc(1rem + 2px);
+            margin-right: 10px;
+        }
+
+        .learn-more {
+            border: 2px solid darken($color: $primary, $amount: 10);
+            background: none;
+        }
+
+    }
+}
+
+section.showcase {
+    margin-top: 6rem;
+    
+    @include desktop(){
+        margin-top: 9rem;
+    }
+    .title {
+        text-align: center;
+        font-size: 2rem;
+        text-transform: uppercase;
+    }
+
+    .product-card {
+        background-color: #f6ebdd;
+        padding: 1.2rem;
+        display: flex;
+
+        .product-desc {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            margin: 0;
+
+            p {
+                font-size: .975rem;
+                line-height: 1.4rem;
+            }
+
+            button {
+                margin-top: 10px;
+                width: 60%;
+            }
+        }
+
+        .product-img {
+            display: grid;
+            place-items: center;
+            width: 50%;
+            img {
+                width: 150px;
+
+                @include desktop(){
+                    width: 390px;
+                    margin-bottom: 10px;
+                }
+            }
+
+            .colors {
+                display: flex;
+
+                img {
+                    width: 40px;
+                    margin: auto 10px;
+
+                    @include desktop(){
+                        width: 70px;
+                        margin: auto 10px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+section.contact {
+
+    // @include desktop(){
+    //     background: url('../images/contact\ bg.svg') no-repeat left bottom;
+    //     background-size: 300px;
+    // }
+    h1, p {
+        text-align: center;
+    }
+
+    .contact-form {
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+
+        @include desktop() {
+            width: 60%;
+            margin: auto;
+        }
+
+        input, textarea {
+            background: $primary;
+            border: none;
+            margin: 1rem 0 1rem 0;
+            font-family: "Montserrat";
+            color: white;
+        }
+
+        input, textarea {
+            padding: .75rem;
+        }
+
+        button {
+            @include desktop() {
+                width: 400px;
+                margin: 10px auto;
+            }
+            
+        }
+    }
+}
+
+
+.active {
+    display: block;
+    background: darken($color: $bg, $amount: 5);
+    width: 50%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: calc(100% + 51em);
+    padding: 1em;
+}
