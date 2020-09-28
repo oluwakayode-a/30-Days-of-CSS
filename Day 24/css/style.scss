@@ -26,11 +26,17 @@ button {
     font-weight: bold;
     font-family: "Montserrat";
     cursor: pointer;
+    width: auto;
+    margin: 10px 0;
 }
 
 // * {
 //     box-sizing: border-box;
 // }
+
+* {
+    box-sizing: border-box;
+}
 
 body, html {
     background-color: $bg;
@@ -111,12 +117,14 @@ section {
 }
 
 section.carousel {
-    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
     img {
         max-width: 200px;
-        position: absolute;
-        right: -80px;
-        top: 230px;
+        
 
         @include desktop {
             max-width: 400px;
@@ -151,6 +159,8 @@ section.carousel {
 
 section.showcase {
     margin-top: 6rem;
+    padding: 0;
+    width: 100vw;
     
     @include desktop(){
         margin-top: 9rem;
@@ -165,6 +175,7 @@ section.showcase {
         background-color: #f6ebdd;
         padding: 1.2rem;
         display: flex;
+        flex-direction: row;
 
         .product-desc {
             width: 50%;
@@ -179,7 +190,6 @@ section.showcase {
 
             button {
                 margin-top: 10px;
-                min-width: 60%;
             }
         }
 
@@ -188,8 +198,7 @@ section.showcase {
             place-items: center;
             width: 50%;
             img {
-                width: 100px;
-                margin: auto;
+                width: 150px;
 
                 @include desktop(){
                     width: 390px;
@@ -199,13 +208,14 @@ section.showcase {
 
             .colors {
                 display: flex;
+                margin: auto 0 15px 0;
 
                 img {
                     width: 40px;
                     margin: auto 10px;
 
                     @include desktop(){
-                        width: 1rem;
+                        width: 70px;
                         margin: auto 10px;
                     }
                 }
@@ -247,11 +257,7 @@ section.contact {
         }
 
         button {
-            @include desktop() {
-                width: 400px;
-                margin: 10px auto;
-            }
-            
+            margin: 10px auto;
         }
     }
 }
@@ -264,6 +270,7 @@ section.contact {
     position: absolute;
     left: 0;
     top: 0;
-    height: calc(100% + 51em);
+    height: 100%;
+    position: fixed;
     padding: 1em;
 }
