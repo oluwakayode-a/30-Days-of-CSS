@@ -89,7 +89,7 @@ section.hero form {
 }
 
 section.hero form input[type='search'] {
-  padding: 1em 4em 1em 3em;
+  padding: 1em 1em 1em 3em;
   border: none;
   border-left: 3px solid #57a2e6;
   background: #4D525F;
