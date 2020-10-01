@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,700,900");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transition: all ease-in-out 250ms;
+  transition: all ease-in-out 250ms;
+  color: white;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  background: url(../img/bg.jpg) no-repeat;
+  background-size: 100rem;
+}
+
+header {
+  padding: 1em;
+}
+
+header nav ul {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0;
+  font-size: 0.9em;
+}
+
+@media (min-width: 640px) {
+  header nav ul {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+}
+
+header nav ul li a {
+  margin: 1em;
+  text-decoration: none;
+}
+
+header nav ul .btn {
+  background: #57a2e6;
+  padding: .7em;
+  margin-top: auto;
+}
+
+section.hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transform: translateY(10%);
+          transform: translateY(10%);
+}
+
+@media (min-width: 640px) {
+  section.hero h1 {
+    font-size: 2.2rem;
+  }
+}
+
+section.hero .hero-text {
+  font-size: .9em;
+  text-align: center;
+  line-height: 1.7em;
+  max-width: 80%;
+  margin: auto;
+}
+
+@media (min-width: 640px) {
+  section.hero .hero-text {
+    font-size: 1em;
+    max-width: 50%;
+  }
+}
+
+section.hero form {
+  margin-top: 2em;
+}
+
+section.hero form input[type='search'] {
+  padding: 1em 4em 1em 3em;
+  border: none;
+  border-left: 3px solid #57a2e6;
+  background: #4D525F;
+  color: white;
+  font-family: 'Raleway';
+}
+
+@media (min-width: 640px) {
+  section.hero form input[type='search'] {
+    padding-right: 27em;
+  }
+}
+
+section.hero form .search {
+  position: relative;
+}
+
+section.hero form i {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+section.hero form input[type='search']:focus {
+  border: none;
+}
+
+section.hero form button[type='submit'] {
+  padding: 1em;
+  margin-left: -9px;
+  border: none;
+  color: #57a2e6;
+  font-weight: bold;
+  font-family: 'Raleway';
+  background: #1D1F21;
+}
+/*# sourceMappingURL=style.css.map */

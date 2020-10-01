@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700,900');
+
+$desktop: 640px;
+
+@mixin desktop {
+    @media (min-width: #{$desktop}) {
+        @content;
+    }
+}
+
+* {
+    box-sizing: border-box;
+    transition: all ease-in-out 250ms;
+    color: white;
+}
+
+body {
+    font-family: "Raleway", sans-serif;
+    background: url(../img/bg.jpg) no-repeat;
+    background-size: 100rem;
+    // height: 100%;
+}
+
+header {
+    padding: 1em;
+    nav {
+        ul {
+            list-style-type: none;
+            display: flex;
+            justify-content: center;
+            padding: 0;
+            font-size: 0.9em;
+
+            @include desktop() {
+                justify-content: flex-end;
+            }
+
+            li a {
+                margin: 1em;
+                text-decoration: none;
+            }
+
+            .btn {
+                background: #57a2e6;
+                padding: .7em;
+                margin-top: auto;
+            }
+        }
+    }
+}
+
+section.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: translateY(10%);
+
+    h1 {
+        @include desktop() {
+            font-size: 2.2rem;
+        }
+    }
+
+    .hero-text {
+        font-size: .9em;
+        text-align: center;
+        line-height: 1.7em;
+        max-width: 80%;
+        margin: auto;
+
+        @include desktop() {
+            font-size: 1em;
+            max-width: 50%;
+        }
+    }
+
+    form {
+        margin-top: 2em;
+
+        input[type='search'] {
+            padding: 1em 4em 1em 3em;
+            border: none;
+            border-left: 3px solid #57a2e6;
+            background: #4D525F;
+            color: white;
+            font-family: 'Raleway';
+
+            @include desktop() {
+                padding-right: 27em;
+            }
+        }
+
+        .search {
+            position: relative;
+        }
+
+        i {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+        }
+
+        input[type='search']:focus {
+            border: none;
+        }
+
+        button[type='submit'] {
+            padding: 1em;
+            margin-left: -9px;
+            border: none;
+            color: #57a2e6;
+            font-weight: bold;
+            font-family: 'Raleway';
+            background: #1D1F21;
+        }
+    }
+}
+
