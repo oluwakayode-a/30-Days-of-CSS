@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700;900&display=swap');
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+$color-dark: #222830;
+$bg: #ebeef2;
+$small-screen: 640px;
+
+@mixin small-screen {
+    @media (min-width: #{$small-screen}) {
+        @content;
+    }
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    transition: all ease-in-out 250ms;
+}
+
+body {
+    background: $bg;
+    font-family: 'Work Sans', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    .header {
+        display: flex;
+        margin: 10px;
+        align-items: center;
+        justify-content: space-between;
+
+        h1 {
+            font-size: 1.6rem;
+        }
+
+        .toggle {
+            display: flex;
+            margin: 10px 5px 10px 5px;
+            background-color: lighten($color: #94959B, $amount: 10);
+            border-radius: 20px;
+
+            span {
+                margin: auto;
+                padding: 13px;
+            }
+
+            .yearly {
+                background-color: white;
+                border-radius: 20px;
+                padding: 11px 10px 11px 15px;
+                margin-right: 2px;
+            }
+        }
+    }
+
+    .card-container {
+        display: flex;
+        flex-direction: column;
+
+        @include small-screen() {
+            flex-direction: row;
+        }
+
+        .card {
+            background-color: white;
+            padding: 1.5rem;
+            margin: 10px;
+
+            h3 {
+                font-size: 1.5rem;
+            }
+
+            .price {
+                font-weight: bold;
+            }
+
+            .billed {
+                font-size: .85rem;
+            }
+
+            p {
+                font-size: .775rem;
+            }
+
+            button {
+                border: none;
+                padding: 1rem 6rem 1rem 6rem;
+                margin-top: 10px;
+                font-family: 'Work Sans';
+                border-radius: 5px;
+                width: 100%;
+            }
+
+            .btn-black {
+                background-color: $color-dark;
+                color: white;
+            }
+
+            .btn-white {
+                background-color: white;
+                color: $color-dark;
+                border: 1.5px solid $color-dark;
+            }
+        }
+    }
+}

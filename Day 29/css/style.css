@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700;900&display=swap");
+@import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transition: all ease-in-out 250ms;
+  transition: all ease-in-out 250ms;
+}
+
+body {
+  background: #ebeef2;
+  font-family: 'Work Sans', sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.container .header h1 {
+  font-size: 1.6rem;
+}
+
+.container .header .toggle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 10px 5px 10px 5px;
+  background-color: #aeafb4;
+  border-radius: 20px;
+}
+
+.container .header .toggle span {
+  margin: auto;
+  padding: 13px;
+}
+
+.container .header .toggle .yearly {
+  background-color: white;
+  border-radius: 20px;
+  padding: 11px 10px 11px 15px;
+  margin-right: 2px;
+}
+
+.container .card-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media (min-width: 640px) {
+  .container .card-container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+.container .card-container .card {
+  background-color: white;
+  padding: 1.5rem;
+  margin: 10px;
+}
+
+.container .card-container .card h3 {
+  font-size: 1.5rem;
+}
+
+.container .card-container .card .price {
+  font-weight: bold;
+}
+
+.container .card-container .card .billed {
+  font-size: .85rem;
+}
+
+.container .card-container .card p {
+  font-size: .775rem;
+}
+
+.container .card-container .card button {
+  border: none;
+  padding: 1rem 6rem 1rem 6rem;
+  margin-top: 10px;
+  font-family: 'Work Sans';
+  border-radius: 5px;
+  width: 100%;
+}
+
+.container .card-container .card .btn-black {
+  background-color: #222830;
+  color: white;
+}
+
+.container .card-container .card .btn-white {
+  background-color: white;
+  color: #222830;
+  border: 1.5px solid #222830;
+}
+/*# sourceMappingURL=style.css.map */
