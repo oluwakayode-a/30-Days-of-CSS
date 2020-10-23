@@ -1,0 +1,217 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700;900&display=swap");
+@import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transition: all ease-in-out 250ms;
+  transition: all ease-in-out 250ms;
+}
+
+body {
+  font-family: 'Work Sans', sans-serif;
+  margin: 0;
+}
+
+@media (min-width: 640px) {
+  header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+header img.toggle {
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  margin: 15px;
+}
+
+@media (min-width: 640px) {
+  header img.toggle {
+    display: none;
+  }
+}
+
+header img.navbar-brand {
+  margin: 15px;
+}
+
+header ul.nav {
+  display: none;
+  list-style-type: none;
+  padding: 2em;
+}
+
+@media (min-width: 640px) {
+  header ul.nav {
+    display: block;
+  }
+}
+
+@media (min-width: 640px) {
+  header ul.nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    padding: .6em;
+  }
+}
+
+header ul.nav li {
+  font-size: 2em;
+  margin: 1em;
+}
+
+@media (min-width: 640px) {
+  header ul.nav li {
+    font-size: .75em;
+  }
+}
+
+header ul.nav li a {
+  color: white;
+}
+
+@media (min-width: 640px) {
+  header ul.nav li a {
+    color: black;
+    text-decoration: none;
+  }
+}
+
+header ul.active {
+  position: absolute;
+  top: 0;
+  background: #0f0f2b;
+  margin: 0;
+  height: calc(100% + 2em);
+  width: 70%;
+  display: block;
+}
+
+.container {
+  text-align: center;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+.container .title {
+  font-size: 1.7rem;
+}
+
+.container p {
+  line-height: 1.6rem;
+}
+
+@media (min-width: 640px) {
+  .container p {
+    max-width: 50%;
+    margin: auto;
+  }
+}
+
+.container .form-container {
+  margin-top: 50px;
+}
+
+.container .form-container input {
+  padding: 15px;
+  font-family: 'Work Sans';
+}
+
+.container .form-container button {
+  padding: 17px 30px;
+  border: none;
+  border-radius: 5px;
+  background-color: #6A376C;
+  color: white;
+  text-transform: uppercase;
+  font-family: 'Work Sans';
+  cursor: pointer;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: .775rem;
+  text-align: center;
+}
+
+@media (min-width: 640px) {
+  footer {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+}
+
+footer .terms ul {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer .terms ul li {
+  margin: 10px;
+  color: #A6A9B8;
+}
+
+footer .terms ul li a {
+  text-decoration: none;
+}
+
+footer .copyright {
+  text-align: center;
+}
+
+footer .social ul {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer .social ul li {
+  margin: 10px;
+}
+
+.fa {
+  color: gray;
+}
+/*# sourceMappingURL=style.css.map */

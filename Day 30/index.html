@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <img src="uidesigndaily-logo.svg" alt="logo" class="navbar-brand">
+        <img src="menu.svg" alt="menu" class="toggle" id="menu">
+        <ul class="nav">
+            <li><a href="#">Designs</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">License</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </header>
+
+    <div class="container">
+        <img src="slack-uidd.svg" alt="" class="slack">
+        <h3 class="title">UI Design Daily Community</h3>
+
+        <p>
+            Want to link with other UI designers or developers? Join our Slack Channel to chat about design tools, 
+            how to get started, UI design trends, or our shared love for avocado toast.
+        </p>
+
+        <div class="form-container">
+            <form action="#">
+                <input type="email" name="email" id="email" placeholder="Enter your email">
+                <button type="submit">Invite Me!</button>
+            </form>
+        </div>
+    </div>
+
+    <hr>
+
+    <footer>
+        <div class="terms">
+            <ul>
+                <li>Terms & Conditions</li>
+                <li>Privacy</li>
+            </ul>
+        </div>
+
+        <div class="copyright">
+            &copy; UIDesignDaily <script>document.write(new Date().getFullYear())</script>
+        </div>
+
+        <div class="social">
+            <ul>
+                <li><a href="#" class="fa fa-twitter"></a></li>
+                <li><a href="#" class="fa fa-behance"></a></li>
+                <li><a href="#" class="fa fa-instagram"></a></li>
+                <li><a href="#" class="fa fa-facebook"></a></li>
+            </ul>
+        </div>
+
+    </footer>
+
+
+    <script>
+        (function() {
+            let el = document.getElementById('menu');
+            let nav = document.querySelector('.nav');
+
+            el.addEventListener('click', e => {
+                e.preventDefault();
+                nav.classList.toggle('active');
+            })
+        })();
+    </script>
+</body>
+</html>
