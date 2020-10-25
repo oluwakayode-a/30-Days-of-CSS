@@ -5,13 +5,15 @@
 }
 
 body {
-    display: grid;
-    place-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 100vh;
     margin: 0;
     font: 62.5% 'Mulish', sans-serif;
     background-color: #fff2f6;
 }
+
 .container {
     position: relative;
 }
@@ -33,7 +35,6 @@ select {
 
 .card {
     background-color: white;
-    width: 400px;
     display: flex;
     flex-direction: column;
     padding: 2rem;
