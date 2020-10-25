@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700;900&display=swap');
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+$color-dark: #222830;
+$bg: #ebeef2;
+$desktop: 640px;
+
+@mixin desktop {
+    @media (min-width: #{$desktop}) {
+        @content;
+    }
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    transition: all ease-in-out 250ms;
+}
+
+body {
+    font-family: 'Work Sans', sans-serif;
+    margin: 0;
+}
+
+main {
+    padding: 0 4rem 4rem 4rem;
+}
+
+header {
+    @include desktop() {
+        display: flex;
+        justify-content: flex-end;
+    }
+    img.toggle {
+        cursor: pointer;
+        position: absolute;
+        right: 0;
+        margin: 15px;
+
+        @include desktop {
+            display: none;
+        }
+    }
+
+    img.navbar-brand {
+        margin: 15px;
+    }
+
+    ul.nav {
+        display: none;
+        list-style-type: none;
+        padding: 2em;
+
+        @include desktop {
+            display: flex;
+            flex-direction: row;
+            padding: .6em;
+        }
+
+        li {
+            font-size: 2em;
+            margin: 1em;
+            
+            @include desktop {
+                font-size: 1em;
+            }
+
+            a {
+                color: white;
+                @include desktop {
+                    color: black;
+                    text-decoration: none;
+                }
+            }
+            
+        }
+        li:hover {
+            border-bottom: 1px solid gray;
+        }
+    }
+    ul.active {
+        position: absolute;
+        top: 0;
+        background: #0f0f2b;
+        margin: 0;
+        height: calc(100% + 2em);
+        width: 70%;
+        display: block;
+        z-index: 9999999;
+    }
+}
+
+.search-upload {
+    transform: translateY(100px);
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+
+    form {
+        input {
+            border: none;
+            border-bottom: 2px solid #DBE2E9;
+            font-family: 'Work Sans';
+            font-size: 1rem;
+        }
+        input:focus {
+            outline: none;
+            border-bottom: 3px solid #DBE2E9;
+        }
+
+        ::placeholder {
+            transform: translateY(-2px);
+            font-size: 1.3rem;
+            color: lighten($color: #dbe29d, $amount: 10);
+        }
+
+        .fa-search {
+            font-size: 1.4rem;
+            color: #DBE2E9;
+            margin-left: -30px;
+            transform: translateY(-5px);
+        }
+    }
+
+    .upload {
+        border: none;
+        padding: 1rem 2rem;
+        margin-top: -20px;
+        background-color: #334043;
+        color: white;
+        font-family: 'Work Sans';
+    }
+}
+
+.images-container {
+    display: flex;
+    margin-top: 100px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    @include desktop() {
+        flex-direction: row;
+        flex-basis: 33.33333%;
+        flex-wrap: wrap;
+    }
+
+    figure {
+        margin: 10px;
+        margin-bottom: auto;
+        flex: 1 1 30%;
+        max-height: 200px;
+    }
+
+    img {
+        width: 100%;
+        object-position: center;
+        object-fit: contain;
+        margin-top: auto;
+    }
+
+    .port-item {
+        position: relative;
+        
+        @include desktop() {
+            overflow: hidden;
+        }
+
+        img {
+            width: 100%;
+            display: block;
+        }
+
+        .port-desc {
+            position: absolute;
+            z-index: 100;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 1em;
+            color: white;
+            background: rgba($color: #000000, $alpha: .6);
+            padding-bottom: 1em;
+
+            @include desktop() {
+                transform: translateY(150%);
+            }
+
+            p {
+                margin: 1em;
+            }
+        }
+    }
+
+    .port-item:hover .port-desc {
+        @include desktop() {
+            transform: translateY(0%);
+        }
+    }
+}
+

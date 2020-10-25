@@ -4,41 +4,120 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
-        <img src="images/logo.svg" alt="logo" class="logo">
-
-        <nav class="nav">
-            <ul class="nav-list">
-                <li class="nav-list-item"><a href="#" class="nav-link">Ski</a></li>
-                <li class="nav-list-item"><a href="#" class="nav-link">Golf</a></li>
-                <li class="nav-list-item"><a href="#" class="nav-link">Hiking</a></li>
-                <li class="nav-list-item"><a href="#" class="nav-link">Contact</a></li>
+    <main>
+        <header>
+            <img src="images/menu.svg" alt="menu" class="toggle" id="menu">
+            <ul class="nav">
+                <li><a href="#">Vector</a></li>
+                <li><a href="#">Illustrations</a></li>
+                <li><a href="#">Images</a></li>
+                <li><a href="#">Icons</a></li>
             </ul>
-        </nav>
-
-        <div class="weather">
-            <div class="weather-icon">
-                <img src="images/15 Weather.svg" alt="partially cloudy">
-            </div>
-            <p class="weather-info">Current weather <span>-6°C</span> </p>
-            <p class="weather-info">Recent snowfall <span>35cm</span></p>
-        </div>
-    </header>
-
-    <main class="main main-ski">
-        <h1 class="main-title">Get next years pass now to save</h1>
-        <p class="main-intro">
-            If it's too steep, you're too old. Straight shot shane mcconkey lookout pass snowmass bode miller freestyle tree well durango corn snow bromley mountain. Stockli st moritz sundown ripping the bumps swix chowder boreal suzy chaffee bumps hospital air kastle.
-        </p>
-
-        <p>
-            <a href="#" class="btn btn-primary">Get a seasons pass</a>
-            <a href="#" class="btn btn-outline">Get tickets</a>
-        </p>
-        
+        </header>
+    
+       <section class="search-upload">
+           <form action="#">
+               <input type="search" name="search" id="" placeholder="Search">
+               <span class="fa fa-search"></span>
+           </form>
+    
+           <button class="upload">Upload</button>
+       </section>
+    
+       <div class="images-container">
+            <figure class="port-item">
+                <img src="images/img-1.jpg" alt="portfolio--1">
+                <figcaption class="port-desc">
+                    <div style="display: flex; justify-content: space-between;">
+                        Abstract Painting
+                        <span class="fa fa-bookmark-o"></span>
+                    </div>
+                    <div style="font-size: .775rem; margin-top: 10px">
+                        245 likes . 35 shares
+                    </div>
+                </figcaption>
+            </figure>
+    
+            <figure class="port-item">
+                <img src="images/img-2.jpg" alt="portfolio--1">
+                <figcaption class="port-desc">
+                    <div style="display: flex; justify-content: space-between;">
+                        Abstract Painting
+                        <span class="fa fa-bookmark-o"></span>
+                    </div>
+                    <div style="font-size: .775rem; margin-top: 10px">
+                        245 likes . 35 shares
+                    </div>
+                </figcaption>
+            </figure>
+    
+            <figure class="port-item">
+                <img src="images/img-3.jpg" alt="portfolio--1">
+                <figcaption class="port-desc">
+                    <div style="display: flex; justify-content: space-between;">
+                        Abstract Painting
+                        <span class="fa fa-bookmark-o"></span>
+                    </div>
+                    <div style="font-size: .775rem; margin-top: 10px">
+                        245 likes . 35 shares
+                    </div>
+                </figcaption>
+            </figure>
+    
+            <figure class="port-item">
+                <img src="images/img-4.jpg" alt="portfolio--1">
+                <figcaption class="port-desc">
+                    <div style="display: flex; justify-content: space-between;">
+                        Abstract Painting
+                        <span class="fa fa-bookmark-o"></span>
+                    </div>
+                    <div style="font-size: .775rem; margin-top: 10px">
+                        245 likes . 35 shares
+                    </div>
+                </figcaption>
+            </figure>
+    
+            <figure class="port-item">
+                <img src="images/img-5.jpg" alt="portfolio--1">
+                <figcaption class="port-desc">
+                    <div style="display: flex; justify-content: space-between;">
+                        Abstract Painting
+                        <span class="fa fa-bookmark-o"></span>
+                    </div>
+                    <div style="font-size: .775rem; margin-top: 10px">
+                        245 likes . 35 shares
+                    </div>
+                </figcaption>
+            </figure>
+    
+            <figure class="port-item">
+                <img src="images/img-6.jpg" alt="portfolio--1">
+                <figcaption class="port-desc">
+                    <div style="display: flex; justify-content: space-between;">
+                        Abstract Painting
+                        <span class="fa fa-bookmark-o"></span>
+                    </div>
+                    <div style="font-size: .775rem; margin-top: 10px">
+                        245 likes . 35 shares
+                    </div>
+                </figcaption>
+            </figure>
+       </div>
     </main>
+
+   <script>
+        (function() {
+            let el = document.getElementById('menu');
+            let nav = document.querySelector('.nav');
+
+            el.addEventListener('click', e => {
+                e.preventDefault();
+                nav.classList.toggle('active');
+            })
+        })();
+    </script>
 </body>
 </html>

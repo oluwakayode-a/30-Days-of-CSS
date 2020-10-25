@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
 </head>
 <body>
     <h1>30 Days of CSS</h1>
 
-    <ul>
+    <ul id="ul">
         <li>
             <a href="Day 1/index.html">Day 1: UI Controls Component</a>
             <a href="https://uidesigndaily.com/posts/figma-ui-controls-components-card-button-dropdown-radio-day-1150"> - [Design Link]</a>
@@ -161,5 +162,13 @@
             <a href="https://uidesigndaily.com/posts/sketch-join-slack-subscribe-form-website-day-1053"> - [Design Link]</a>
         </li>
     </ul>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+    <script>
+        const app = new Vue({
+            el: '#ul'
+        })
+    </script>
+
 </body>
 </html>
